@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We create a variable 'name' and assign it the string 'Dane'
+// We use our if command to check if our string 'Dane' has the same type and value as 'Mary' which it doesn't
+// Therefore the console.log command will follow the 'else' path, giving a result of 'How do you do?' since 'Dane' doesn't match 'Mary'
 //
 
 //CODE
@@ -45,9 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We create two variables 'secret' and 'code', secret has no assigned value while code is assigned value '123'
+// The first 'if' statement checks if 'code' has the value of 123, which it does
+// Therefore 'secret' is assigned the string 'super' and 'code' has its value doubled to 246
+// The second 'if' statement subsequently checks if 'code' has a value greater than 250, which is currently does not
+// Therefore 'secret' does get assigned the string 'duper' because the if statement wasn't met
+// So the final result is that running console.log(secret) gives a result of 'super' because only the first if statement was met
 //
 
 //CODE
@@ -70,10 +73,11 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create variables 'isStudent' 'age' and 'zip' which respectively have the strings/values of 'true' '34' and '55407'
+// Our first if statement checks if BOTH isStudent equals true AND zip is greater than 80000, since zip is not greater than 80000 than this first if statement is not met and nothing is outputted to the console
+// The else path moves us to our second if statement, which checks if isStudent equals false OR age is less than 30, since neither of those is true than this second if statement is not met and nothing is outputted to the console
+// The else path moves us to our third if statement, which checks if isStudent equals true, since it does than the console.log successfully outputs 'Welcome to Prime!'
+// And the code stops there because the last else path isn't taken since the previous if statement was successfully met
 
 //CODE
 /*
@@ -130,6 +134,7 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX colorOne should be equal to 'blue' and colorTwo should be equal to 'red' and also in the if statement colorTwo should also equal purple
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
@@ -145,8 +150,10 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// FIX time = 4 should be a variable, not a constant, so 'let time = 4'
 const time = 4;
 
+// FIX we need both conditions to be met, so we need to use '&&' not '||'
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -158,9 +165,11 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+// FIX minAge = 21 should be a variable, not a constant, so 'let minAge = 21'
 const minAge = 21;
 
 if(minAge <= age) {
+// FIX we need to switch the positions of 'no entry' and 'enter' in the code, so that console.log('enter') runs when we successfully check than age is greater or equal to minAge
   console.log('no entry');
 } else {
   console.log('enter');
